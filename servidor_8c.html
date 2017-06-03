@@ -1,0 +1,511 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Sockets - Cliente | Servidor: Referencia del Archivo servidor.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Sockets - Cliente | Servidor
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Estructuras&#160;de&#160;Datos</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Globales</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Estructuras de datos</a> &#124;
+<a href="#define-members">'defines'</a> &#124;
+<a href="#func-members">Funciones</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo servidor.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;unistd.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;time.h&gt;</code><br />
+<code>#include &lt;sys/types.h&gt;</code><br />
+<code>#include &lt;sys/socket.h&gt;</code><br />
+<code>#include &lt;netinet/in.h&gt;</code><br />
+<code>#include &lt;netinet/tcp.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Dependencia gráfica adjunta para servidor.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="servidor_8c__incl.png" border="0" usemap="#servidor_8c" alt=""/></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Estructuras de datos</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdato.html">dato</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estructura que almacena cada dato recibido.  <a href="structdato.html#details">Más...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+'defines'</h2></td></tr>
+<tr class="memitem:a34995b955465f6bbb37c359173d50477"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="servidor_8c.html#a34995b955465f6bbb37c359173d50477">ANSI_COLOR_RED</a>&#160;&#160;&#160;&quot;\x1b[31m&quot;</td></tr>
+<tr class="separator:a34995b955465f6bbb37c359173d50477"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a966c72d8d733c7734c6c784753d894c7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="servidor_8c.html#a966c72d8d733c7734c6c784753d894c7">ANSI_COLOR_GREEN</a>&#160;&#160;&#160;&quot;\x1b[32m&quot;</td></tr>
+<tr class="separator:a966c72d8d733c7734c6c784753d894c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d0b0043e152438bb39b918a1f98c65f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="servidor_8c.html#a8d0b0043e152438bb39b918a1f98c65f">ANSI_COLOR_CYAN</a>&#160;&#160;&#160;&quot;\x1b[36m&quot;</td></tr>
+<tr class="separator:a8d0b0043e152438bb39b918a1f98c65f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92a364c2b863dde1a024a77eac2a5b3b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="servidor_8c.html#a92a364c2b863dde1a024a77eac2a5b3b">ANSI_COLOR_RESET</a>&#160;&#160;&#160;&quot;\x1b[0m&quot;</td></tr>
+<tr class="separator:a92a364c2b863dde1a024a77eac2a5b3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0b4816fb45161ef9da5e6d6134ee28a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="servidor_8c.html#ae0b4816fb45161ef9da5e6d6134ee28a">TAM</a>&#160;&#160;&#160;4096</td></tr>
+<tr class="separator:ae0b4816fb45161ef9da5e6d6134ee28a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a2d45e5c569abdf0377394147e5bf51d6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="servidor_8c.html#a2d45e5c569abdf0377394147e5bf51d6">validacion</a> (char *buffer)</td></tr>
+<tr class="memdesc:a2d45e5c569abdf0377394147e5bf51d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Carga el archivo de usuarios y verifica que el usuario ingresado exista y que la contraseña asociada sea correcta.  <a href="#a2d45e5c569abdf0377394147e5bf51d6">Más...</a><br /></td></tr>
+<tr class="separator:a2d45e5c569abdf0377394147e5bf51d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafc4e1f3181b552deaca30fcbf80685a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="servidor_8c.html#aafc4e1f3181b552deaca30fcbf80685a">enviarDatos</a> (int puerto, int num_estacion, int recs)</td></tr>
+<tr class="memdesc:aafc4e1f3181b552deaca30fcbf80685a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Establece conexion UDP con el cliente para el envio de datos.  <a href="#aafc4e1f3181b552deaca30fcbf80685a">Más...</a><br /></td></tr>
+<tr class="separator:aafc4e1f3181b552deaca30fcbf80685a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c3b29a48450614b8710cfe211b4b42f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="servidor_8c.html#a1c3b29a48450614b8710cfe211b4b42f">listar</a> (char *buffer)</td></tr>
+<tr class="memdesc:a1c3b29a48450614b8710cfe211b4b42f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comprueba en la estructura de datos del servidor aquellas variables que contienen datos para luego listar el sensor correspondiente.  <a href="#a1c3b29a48450614b8710cfe211b4b42f">Más...</a><br /></td></tr>
+<tr class="separator:a1c3b29a48450614b8710cfe211b4b42f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6fd443f6f2806782c21126108161c8b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="servidor_8c.html#ad6fd443f6f2806782c21126108161c8b">constEstruc</a> (void)</td></tr>
+<tr class="memdesc:ad6fd443f6f2806782c21126108161c8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lee los datos del archivo de la base de datos de las estaciones, parsea la información y lo carga al campo correspondiente en la estructura.  <a href="#ad6fd443f6f2806782c21126108161c8b">Más...</a><br /></td></tr>
+<tr class="separator:ad6fd443f6f2806782c21126108161c8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c3bdae483c63f3a87a2c0d07c3fe646"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="servidor_8c.html#a9c3bdae483c63f3a87a2c0d07c3fe646">getDatos</a> (char *buffer, char *filtro, int recs)</td></tr>
+<tr class="memdesc:a9c3bdae483c63f3a87a2c0d07c3fe646"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recupera los datos de la estructura acorde con el filtro suministrado.  <a href="#a9c3bdae483c63f3a87a2c0d07c3fe646">Más...</a><br /></td></tr>
+<tr class="separator:a9c3bdae483c63f3a87a2c0d07c3fe646"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a048b697fb4bd5e182286c7d9ad469a05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="servidor_8c.html#a048b697fb4bd5e182286c7d9ad469a05">precip_diarias</a> (char *buffer, int num_estacion, int recs, int cond)</td></tr>
+<tr class="memdesc:a048b697fb4bd5e182286c7d9ad469a05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcula las precipitaciones diarias de la estacion pasada como parametro. Tambien calcula el aculumado y la media.  <a href="#a048b697fb4bd5e182286c7d9ad469a05">Más...</a><br /></td></tr>
+<tr class="separator:a048b697fb4bd5e182286c7d9ad469a05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="servidor_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main</a> (int argc, char *argv[])</td></tr>
+<tr class="separator:a0ddf1224851353fc92bfbff6f499fa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a3b439133e4b01119a984925b2adfd599"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structdato.html">dato</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="servidor_8c.html#a3b439133e4b01119a984925b2adfd599">registro</a> [100000]</td></tr>
+<tr class="separator:a3b439133e4b01119a984925b2adfd599"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a634be50f4e41c3ad7ca9977e7045f628"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="servidor_8c.html#a634be50f4e41c3ad7ca9977e7045f628">estaciones</a> [10]</td></tr>
+<tr class="separator:a634be50f4e41c3ad7ca9977e7045f628"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ba2532d121d944f17c7fe02f3a0825b"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="servidor_8c.html#a6ba2532d121d944f17c7fe02f3a0825b">Sensores</a> []</td></tr>
+<tr class="separator:a6ba2532d121d944f17c7fe02f3a0825b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae574bd64a2929ad4a9a9bd38f0c79be2"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="servidor_8c.html#ae574bd64a2929ad4a9a9bd38f0c79be2">Variables</a> []</td></tr>
+<tr class="separator:ae574bd64a2929ad4a9a9bd38f0c79be2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentación de los 'defines'</h2>
+<a class="anchor" id="a8d0b0043e152438bb39b918a1f98c65f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ANSI_COLOR_CYAN&#160;&#160;&#160;&quot;\x1b[36m&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a966c72d8d733c7734c6c784753d894c7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ANSI_COLOR_GREEN&#160;&#160;&#160;&quot;\x1b[32m&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a34995b955465f6bbb37c359173d50477"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ANSI_COLOR_RED&#160;&#160;&#160;&quot;\x1b[31m&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a92a364c2b863dde1a024a77eac2a5b3b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ANSI_COLOR_RESET&#160;&#160;&#160;&quot;\x1b[0m&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae0b4816fb45161ef9da5e6d6134ee28a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TAM&#160;&#160;&#160;4096</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las funciones</h2>
+<a class="anchor" id="ad6fd443f6f2806782c21126108161c8b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int constEstruc </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lee los datos del archivo de la base de datos de las estaciones, parsea la información y lo carga al campo correspondiente en la estructura. </p>
+
+</div>
+</div>
+<a class="anchor" id="aafc4e1f3181b552deaca30fcbf80685a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int enviarDatos </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>puerto</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num_estacion</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>recs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Establece conexion UDP con el cliente para el envio de datos. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">puerto</td><td>Puerto del servidor </td></tr>
+    <tr><td class="paramname">num_estacion</td><td>Numero de estación de la que se solicitan los datos </td></tr>
+    <tr><td class="paramname">recs</td><td>Cantidad de datos</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Si la tranferencia se pudo realizar retorno 1, en caso contrario -1. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9c3bdae483c63f3a87a2c0d07c3fe646"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void getDatos </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>filtro</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>recs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Recupera los datos de la estructura acorde con el filtro suministrado. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>Informacion concatenada para ser enviada al cliente </td></tr>
+    <tr><td class="paramname">filtro</td><td>Filtro de busqueda de informacion en la estructura de datos </td></tr>
+    <tr><td class="paramname">recs</td><td>Cantidad de datos </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a1c3b29a48450614b8710cfe211b4b42f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void listar </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Comprueba en la estructura de datos del servidor aquellas variables que contienen datos para luego listar el sensor correspondiente. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>Lo datos se concatenan en el buffer para luego ser enviado al cliente. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a0ddf1224851353fc92bfbff6f499fa97"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>argv</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Para la funcion bind(int sd, struct sockaddr *my_addr, int addrlen) sd: file descriptor devuelto por socket() my_addr: estructura que contiene la direccion, sockaddr_un para UNIX y sockaddr_in para INTERNET, que es convertida a sockaddr mediante casting addrlen: longitud del campo direccion</p>
+<p>Esta funcion devuelve cero en caso exitoso y un numero negrativo en caso de fallo.</p>
+<p>int accept( int sockfd, struct sockaddr *addr, socklen_t *addrlen ); sockfd: socket descriptor. addr: estructura sockaddr usada para la comunicacion. addrlen: tamanio de la estructura sockaddr.</p>
+<p>Devuelve un file descriptor positivo si fue exitoso y -1 en caso contrario.</p>
+
+</div>
+</div>
+<a class="anchor" id="a048b697fb4bd5e182286c7d9ad469a05"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void precip_diarias </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num_estacion</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>recs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cond</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calcula las precipitaciones diarias de la estacion pasada como parametro. Tambien calcula el aculumado y la media. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>Informacion concatenada para ser enviada al cliente </td></tr>
+    <tr><td class="paramname">num_estacion</td><td>Numero de estación de la que se solicitan los datos </td></tr>
+    <tr><td class="paramname">recs</td><td>Cantidad de datos </td></tr>
+    <tr><td class="paramname">cond</td><td>Si es 1 imprime el acumulado de la variable </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a2d45e5c569abdf0377394147e5bf51d6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int validacion </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Carga el archivo de usuarios y verifica que el usuario ingresado exista y que la contraseña asociada sea correcta. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>Usuario y contraseña ingresado por el cliente.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Si la validacion es exitosa retorna 1, en caso contrario 0. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las variables</h2>
+<a class="anchor" id="a634be50f4e41c3ad7ca9977e7045f628"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int estaciones[10]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3b439133e4b01119a984925b2adfd599"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structdato.html">dato</a>* registro[100000]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6ba2532d121d944f17c7fe02f3a0825b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* Sensores[]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valor inicial:</b><div class="fragment"><div class="line">=</div><div class="line">  { <span class="stringliteral">&quot;Termometro&quot;</span>, </div><div class="line">      <span class="stringliteral">&quot;Higrometro&quot;</span>, </div><div class="line">      <span class="stringliteral">&quot;Pluviometro&quot;</span>, </div><div class="line">      <span class="stringliteral">&quot;Anemometro&quot;</span>, </div><div class="line">      <span class="stringliteral">&quot;Veleta&quot;</span>, </div><div class="line">      <span class="stringliteral">&quot;Barometro&quot;</span>, </div><div class="line">      <span class="stringliteral">&quot;Piranometro&quot;</span>, </div><div class="line">      <span class="stringliteral">&quot;Termometro_Suelo_1&quot;</span>, </div><div class="line">      <span class="stringliteral">&quot;Termometro_Suelo_2&quot;</span>, </div><div class="line">      <span class="stringliteral">&quot;Termometro_Suelo_3&quot;</span>, </div><div class="line">      <span class="stringliteral">&quot;Higrometro_suelo_1&quot;</span>, </div><div class="line">      <span class="stringliteral">&quot;Higrometro_suelo_2&quot;</span>, </div><div class="line">      <span class="stringliteral">&quot;Higrometro_suelo_3&quot;</span> </div><div class="line">    }</div></div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ae574bd64a2929ad4a9a9bd38f0c79be2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* Variables[]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valor inicial:</b><div class="fragment"><div class="line">=</div><div class="line">  { <span class="stringliteral">&quot;0&quot;</span>, <span class="stringliteral">&quot;1&quot;</span>, <span class="stringliteral">&quot;2&quot;</span>, <span class="stringliteral">&quot;3&quot;</span>, <span class="stringliteral">&quot;temperatura&quot;</span>, <span class="stringliteral">&quot;humedad&quot;</span>, <span class="stringliteral">&quot;punto_rocio&quot;</span>, <span class="stringliteral">&quot;precipitacion&quot;</span>, <span class="stringliteral">&quot;velocidad_viento&quot;</span>, <span class="stringliteral">&quot;9&quot;</span>, <span class="stringliteral">&quot;10&quot;</span>,</div><div class="line">      <span class="stringliteral">&quot;presion&quot;</span>, <span class="stringliteral">&quot;radiacion_solar&quot;</span>, <span class="stringliteral">&quot;temp_suelo_1&quot;</span>, <span class="stringliteral">&quot;temp_suelo_2&quot;</span>, <span class="stringliteral">&quot;temp_suelo_3&quot;</span>, <span class="stringliteral">&quot;hum_suelo_1&quot;</span>, <span class="stringliteral">&quot;hum_suelo_2&quot;</span>,</div><div class="line">      <span class="stringliteral">&quot;hum_suelo_3&quot;</span>, <span class="stringliteral">&quot;hum_hoja&quot;</span> }</div></div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>
